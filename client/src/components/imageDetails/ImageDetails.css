@@ -1,0 +1,83 @@
+.ImageDetailsContainer {
+  width: 100vw;
+  height: 100vh;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.leftSection,
+.righSection {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.leftSection > img {
+  width: 60%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px 2px black;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+.leftSection > img:hover {
+  transform: scale(1.1);
+}
+.righSectionContent {
+  width: 400px;
+  height: 300px;
+  box-shadow: 0 0 10px 2px black;
+  border-radius: 12px;
+  padding: 15px;
+
+  display: grid;
+  place-items: center;
+}
+.righSectionContent > div {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.righSectionContent > div > h1 {
+  text-align: center;
+}
+.righSectionContent > div > input {
+  width: 100% !important;
+  height: 35px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.righSectionContent > div > div {
+  display: flex;
+  gap: 12px;
+  justify-content: space-around;
+  transition: all 1s ease-in;
+}
+.righSectionContent > div > div>button:hover{
+transform: scale(1.1);
+}
+
+.imageCaption {
+  position: absolute;
+
+  top: 50;
+  right: 70;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  white-space: nowrap;
+  max-width: 80%;
+  word-wrap: break-word;
+  overflow-x: auto;
+}
