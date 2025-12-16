@@ -31,7 +31,7 @@ jobs:
       # ------------------------------
       - name: Install backend dependencies
         working-directory: ./server
-        run: npm install
+        run: npm install -f
 
       - name: Create backend .env file
         working-directory: ./server
