@@ -55,7 +55,7 @@ jobs:
 
       - name: Install frontend dependencies
         working-directory: ./client
-        run: npm install
+        run: npm install -f
 
       - name: Create frontend .env file
         working-directory: ./client
